@@ -2,15 +2,179 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cursos de DevOps da Alura</title>
+    <title>Curso de GIT</title>
 </head>
 <body>
-    <ul>
-        <li>Vagrant</li>
-        <li>Docker: curso</li>
-        <li>Ansible: Infraestrutura com código</li>
-        <li>Integração Contínua: Maturidade etc etc</li>
-        <li>JavaScript: curso Js para web</li>
-    </ul>
+    <h1>Códigos para o terminal git </h1>
+
+    <div id="main">
+        <div class="gitinit">
+            <h2><code>$ git init</code></h2>
+                <ul>
+                    <p>inicia o git na pasta local</p>
+                    <li>--bare (repositório para servidor, para armazenamento) </li>
+                </ul>
+        </div>    
+
+        <div class="gitadd">
+            <h2><code>$ git add "nome arquivo"</code></h2>
+            <ul>
+                <p>adiciona o arquivo no git </p>
+                <p>com . => adc todas pastas do repositório</p>
+                <p>sempre que for commitar tem que add</p>
+            </ul>   
+        </div>   
+
+        <div class="gitrm">
+            <h2><code>$ git rm "nome arquivo"</code></h2>
+            <ul>
+                <p>apaga arquivo</p>
+            </ul>
+        </div>
+
+        <div class="gitcommit">
+            <h2><code>$ git commit -m "mensagem"</code></h2>
+            <ul>
+                <p>Usado para comitar alguma alteração no arquivo</p>
+                <p>Não comitar sem fechar o código</p>
+            </ul>
+        </div>
+
+        <div class="gitstatus">
+            <h2><code>$ git status</code></h2>
+            <ul>
+                <p>mostra o status do git o que precisa ser feito</p>
+            </ul>
+        </div>    
+
+        <div class="gitconfig">
+            <h2><code>$ git config</code> </h2>
+            <ul>
+                <li>--local user.name "kauan"</li>
+                <li>-- global user.email "kauan@kauan.com</li>
+            </ul>  
+        </div>
+
+        <div class="gitignore">
+            <h2>.gitignore (cria um arquivo)</h2>
+            <ul>
+                <p>todo arquivo dentro do repositorio dentro do arquivo .gitignore sera ignorado</p>
+            </ul>
+        </div>
+
+        <div class="gitclone">
+            <h2><code>$ git log</code></h2>
+                <ul>
+                    <p>ver histórico de commits</p>
+                    <li>--oneline (ver tudo em uma linha</li>
+                    <li>-p (ver commit inteiro com as alterações)</li>
+                    <li>--pretty (estiliza o formato)</li>
+                </ul>
+        </div>
+
+        <div class="gitremote">
+            <h2><code>$ git remote (mostra os locais remotos)</code></h2>
+                <ul>
+                    <li><code>add "origin" "url pasta ou link"</code></li>
+                    <li>-v (mostra os caminho do remote) </li>
+                </ul> 
+        </div>        
+
+        <div class="gitclone">   
+            <h2><code>$ git clone "url do servidor" "nome da pasta nova"</code></h2>
+                <ul>
+                    <p>usar no computador de outra pessoa</p>
+
+                </ul>    
+        </div> 
+
+        <div class="gitbranch">   
+            <h2><code>$ git branch (ramo)</code></h2>
+                <ul>
+                    <p>mostra os branchs atuais</p>
+                    <li><code>"nome" cria uma nova ramificação - linha do tempo</code></li>
+                </ul> 
+        </div> 
+
+        <div class="gitcheckout">   
+            <h2><code>$ git checkout (usado para navegar pelo git)</code></h2>
+                <ul>
+                    <li>"nome branch" muda o git para a branch</li>
+                    <li>--"nome do arquivo" desfaz as alteração antes do commit</li>
+                    <li>"numero hash" vai para o hash</li>
+                </ul> 
+        </div> 
+
+        <div class="gitmerge">   
+            <h2><code>$ git merge</code></h2>
+                <ul>
+                    <li>"nome branch" mescla 2 linhas do tempo porém tem que estar na master e todos commit vão para master</li>
+                </ul> 
+        </div> 
+
+        <div class="gitrelease">   
+            <h2><code>$ git release</code></h2>
+                <ul>
+                    <li>"nome branch" atualiza a branch atual</li>
+                </ul> 
+        </div> 
+
+        <div class="gitpull">   
+            <h2><code>$ git pull "origin" "master"</code></h2>
+                <ul>
+                    <p>puxa do local remoto para a branch que quiser</p>
+                </ul> 
+        </div> 
+
+        <div class="gitpush">   
+            <h2><code>$ git push "origin" "mater"</code></h2>
+                <ul>
+                    <p>empurra os dados p/ o local remoto na branch</p>
+                </ul> 
+        </div> 
+
+        <div class="gitreset">   
+            <h2><code>$ git reset HEAD "nomeArquivo"</code></h2>
+                <ul>
+                    <p>head = estado que o trabalho esta</p>
+                    <p>volta ao estado para commitar</p>
+                </ul> 
+        </div> 
+
+        <div class="gitrevert">   
+            <h2><code>$ git revert "codigo hash"</code></h2>
+                <ul>
+                    <p>pegando o hash do commit pelo log, desfaz o commit</p>
+                    <p>pode usar os 7 primeiros numeros do hash</p>
+                </ul> 
+        </div> 
+
+        <div class="gitstash">   
+            <h2><code>$ git stash</code></h2>
+                <ul>
+                    <p>salva uma alteração para depois</p>
+                    <li>list (mostra uma lista dos stash</li>
+                    <li>pop (adiciona para commit e tira do stash</li>
+                </ul> 
+        </div> 
+
+        <div class="gitdif">   
+            <h2><code>$ git diff "hash0".."hash1"</code></h2>
+                <ul>
+                    <p>mostra diferença de um hash para outro</p>
+                    <p>apenas diff mostra tudo antes do commit</p>
+                </ul> 
+        </div> 
+
+        <div class="gittag">   
+            <h2><code>$ git tag -a "v.1.0' -m "mensagem"</code></h2>
+                <ul>
+                    <p>cria um marco no projeto, adiciona uma versão</p>
+                    <li>git push origin v.1.0 (manda versão pro remoto)</li>
+                </ul> 
+        </div> 
+
+
+    </div>      
 </body>
 </html>
